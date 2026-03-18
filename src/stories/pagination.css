@@ -1,0 +1,54 @@
+@import '../tokens.css';
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-sans);
+}
+
+.pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: background 80ms, border-color 80ms;
+  gap: var(--space-1);
+}
+
+.pagination__btn:hover:not(:disabled):not(.pagination__btn--active) {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+}
+
+.pagination__btn:disabled {
+  color: var(--gray-300);
+  border-color: var(--gray-200);
+  cursor: not-allowed;
+  background: #fff;
+}
+
+.pagination__btn--active {
+  background: var(--brand-50);
+  border-color: var(--brand-600);
+  color: var(--brand-700);
+}
+
+.pagination__dots {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  font-size: var(--text-sm);
+  color: var(--gray-400);
+}

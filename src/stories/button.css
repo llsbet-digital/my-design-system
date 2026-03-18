@@ -1,0 +1,197 @@
+@import '../tokens.css';
+
+/* ── Base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-weight: var(--font-semibold);
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: background-color 120ms ease, box-shadow 120ms ease, border-color 120ms ease, color 120ms ease;
+  text-decoration: none;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn:focus-visible {
+  outline: none;
+}
+
+/* ── Sizes ── */
+.btn--sm {
+  padding: 8px 14px;
+  font-size: var(--text-sm);
+}
+
+.btn--md {
+  padding: 10px 18px;
+  font-size: var(--text-sm);
+}
+
+.btn--lg {
+  padding: 10px 18px;
+  font-size: var(--text-md);
+}
+
+.btn--xl {
+  padding: 12px 20px;
+  font-size: var(--text-md);
+}
+
+.btn--2xl {
+  padding: 16px 28px;
+  font-size: var(--text-lg);
+}
+
+/* ── Primary ── */
+.btn--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn--primary:focus-visible {
+  box-shadow: var(--shadow-xs), var(--focus-ring-brand);
+}
+
+/* ── Secondary (Gray) ── */
+.btn--secondary {
+  background-color: #ffffff;
+  border-color: var(--color-border-primary);
+  color: var(--color-fg-secondary);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--secondary:hover {
+  background-color: var(--gray-50);
+  color: var(--color-fg-primary);
+}
+
+.btn--secondary:focus-visible {
+  box-shadow: var(--shadow-xs), 0 0 0 4px var(--gray-100);
+}
+
+/* ── Secondary Color (Brand outline) ── */
+.btn--secondary-color {
+  background-color: #ffffff;
+  border-color: var(--brand-300);
+  color: var(--brand-700);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--secondary-color:hover {
+  background-color: var(--brand-50);
+  border-color: var(--brand-300);
+}
+
+.btn--secondary-color:focus-visible {
+  box-shadow: var(--shadow-xs), var(--focus-ring-brand);
+}
+
+/* ── Tertiary (Ghost) ── */
+.btn--tertiary {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-fg-secondary);
+}
+
+.btn--tertiary:hover {
+  background-color: var(--gray-50);
+  color: var(--color-fg-primary);
+}
+
+/* ── Tertiary Color ── */
+.btn--tertiary-color {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--brand-700);
+}
+
+.btn--tertiary-color:hover {
+  background-color: var(--brand-50);
+  color: var(--brand-800);
+}
+
+/* ── Destructive Primary ── */
+.btn--destructive {
+  background-color: var(--color-destructive);
+  border-color: var(--color-destructive);
+  color: #ffffff;
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--destructive:hover {
+  background-color: var(--color-destructive-hover);
+  border-color: var(--color-destructive-hover);
+}
+
+.btn--destructive:focus-visible {
+  box-shadow: var(--shadow-xs), var(--focus-ring-error);
+}
+
+/* ── Destructive Secondary ── */
+.btn--destructive-secondary {
+  background-color: #ffffff;
+  border-color: var(--error-300);
+  color: var(--error-700);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--destructive-secondary:hover {
+  background-color: var(--error-50);
+}
+
+.btn--destructive-secondary:focus-visible {
+  box-shadow: var(--shadow-xs), var(--focus-ring-error);
+}
+
+/* ── Link ── */
+.btn--link {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--brand-700);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn--link:hover {
+  color: var(--brand-800);
+}
+
+/* ── Link Gray ── */
+.btn--link-gray {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--gray-600);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn--link-gray:hover {
+  color: var(--gray-700);
+}
+
+/* ── Icon ── */
+.btn__icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+}
