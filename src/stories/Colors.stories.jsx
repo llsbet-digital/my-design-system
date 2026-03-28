@@ -70,12 +70,12 @@ const SemanticRow = ({ name, cssVar, value }) => (
 
 const PALETTES = [
   { title: 'gray', steps: [
-    { step: 25, value: '#FCFCFD' }, { step: 50, value: '#F9FAFB' },
-    { step: 100, value: '#F2F4F7' }, { step: 200, value: '#EAECF0' },
-    { step: 300, value: '#D0D5DD' }, { step: 400, value: '#98A2B3' },
-    { step: 500, value: '#667085', dark: true }, { step: 600, value: '#475467', dark: true },
-    { step: 700, value: '#344054', dark: true }, { step: 800, value: '#1D2939', dark: true },
-    { step: 900, value: '#101828', dark: true },
+    { step: 25, value: '#FCFCFD' }, { step: 50, value: '#FAFAFA' },
+    { step: 100, value: '#F2F4F7' }, { step: 200, value: '#E9EAEB' },
+    { step: 300, value: '#D5D7DA' }, { step: 400, value: '#A4A7AE' },
+    { step: 500, value: '#717680', dark: true }, { step: 600, value: '#535862', dark: true },
+    { step: 700, value: '#414651', dark: true }, { step: 800, value: '#1D2939', dark: true },
+    { step: 900, value: '#181D27', dark: true },
   ]},
   { title: 'brand', steps: [
     { step: 25, value: '#FCFAFF' }, { step: 50, value: '#F9F5FF' },
@@ -180,14 +180,14 @@ const SEMANTIC = [
   { name: '--color-primary-hover',    cssVar: 'var(--brand-700)',  value: '#6941C6' },
   { name: '--color-primary-light',    cssVar: 'var(--brand-50)',   value: '#F9F5FF' },
   { name: '--color-destructive',      cssVar: 'var(--error-600)',  value: '#D92D20' },
-  { name: '--color-fg-primary',       cssVar: 'var(--gray-900)',   value: '#101828' },
-  { name: '--color-fg-secondary',     cssVar: 'var(--gray-700)',   value: '#344054' },
-  { name: '--color-fg-tertiary',      cssVar: 'var(--gray-500)',   value: '#667085' },
-  { name: '--color-fg-disabled',      cssVar: 'var(--gray-400)',   value: '#98A2B3' },
+  { name: '--color-fg-primary',       cssVar: 'var(--gray-900)',   value: '#181D27' },
+  { name: '--color-fg-secondary',     cssVar: 'var(--gray-700)',   value: '#414651' },
+  { name: '--color-fg-tertiary',      cssVar: 'var(--gray-500)',   value: '#717680' },
+  { name: '--color-fg-disabled',      cssVar: 'var(--gray-400)',   value: '#A4A7AE' },
   { name: '--color-bg-primary',       cssVar: '#ffffff',           value: '#ffffff' },
-  { name: '--color-bg-secondary',     cssVar: 'var(--gray-50)',    value: '#F9FAFB' },
-  { name: '--color-border-primary',   cssVar: 'var(--gray-300)',   value: '#D0D5DD' },
-  { name: '--color-border-secondary', cssVar: 'var(--gray-200)',   value: '#EAECF0' },
+  { name: '--color-bg-secondary',     cssVar: 'var(--gray-50)',    value: '#FAFAFA' },
+  { name: '--color-border-primary',   cssVar: 'var(--gray-300)',   value: '#D5D7DA' },
+  { name: '--color-border-secondary', cssVar: 'var(--gray-200)',   value: '#E9EAEB' },
 ];
 
 const wrap = { padding: '32px 40px', fontFamily: 'var(--font-sans)', background: '#fff', minHeight: '100vh' };
